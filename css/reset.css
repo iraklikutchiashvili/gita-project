@@ -41,7 +41,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a{
+a,
+a:hover{
     text-decoration: none;
 	color: #cd5c5c;
 	font-size: 20px;

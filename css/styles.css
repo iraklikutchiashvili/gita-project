@@ -63,3 +63,10 @@
 .contact-box textarea::placeholder{
     padding: 10px;
 }
+
+/* Homepage styles */
+.btn-box {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
