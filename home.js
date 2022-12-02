@@ -3,6 +3,9 @@ $(function(){
         'American Shorthair', 'Exotic', 'Scottish Fold', 'Burmese', 'Birman', 'Bombay', 'Russian Blue', 'Siberian',
         'Norwegian Forest', 'American Curl', 'American Bobtail', 'Balinese', "Devon Rex", "Chartreux", "Turkish Angora",
         "Japanese Bobtail", "Manx", "American Wirehair", "Ragamuffin", "Somali", "Egyptian Mau", "Himalayan", "Cornish Rex"];
+    
+    $("#btn").on("click", retrieveData);
+    
     function retrieveData(){
         const name = nameList[Math.floor(Math.random()*29)];
         $.ajax({
@@ -37,8 +40,5 @@ $(function(){
                 console.error('Error: ', jqXHR.responseText);
             }
         });
-    }
-
-    $("#btn").on("click", retrieveData);
-
+    } 
 });
