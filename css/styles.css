@@ -22,17 +22,22 @@
     margin: 100px auto; 
     max-width: 600px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
-    row-gap: 20px;
+}
+.about-box p{
+    display: block;
+    font-weight: 500;
+    margin-top: 40px;
     font-size: 20px;
-    padding: 20px;
 }
 .about-box h1{
     font-weight: bold;
     color: #e34234;
 }
 .icons-box {
+    visibility: hidden;
     margin: 30px auto;
     display: flex;
     column-gap: 50px;
@@ -63,7 +68,19 @@
 .contact-box textarea::placeholder{
     padding: 10px;
 }
-
+.invalidEmailP{
+    display: none;
+    color: red;
+    margin-top: 5px;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+b{
+    color: red;
+    margin-left: 6px;
+    display: inline-block;
+    visibility: hidden;
+}
 /* Homepage styles */
 .btn-box {
     margin: 100px auto;
@@ -72,7 +89,7 @@
 }
 .cat-card{
     visibility: hidden;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     display: flex;
     max-width: 800px;
     width: 100%;

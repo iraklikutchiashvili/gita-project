@@ -26,11 +26,15 @@
     <body>
         <div class="contact-box">
             <form action="POST">
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br/>
-                <textarea id="msg" cols="21" rows="5" placeholder="Enter your message"></textarea><br/>
+                <input class="emailInput" type="email" id="email" name="email" placeholder="Enter your email" required><br/>
+                <p class="invalidEmailP">Enter Valid Email</p>
+                <textarea id="msg" cols="21" rows="5" placeholder="Enter your message" required></textarea><br/>
                 <button type="submit" class="btn btn-danger">Send</button>
+                <b>Uh oh! You need to fill in form!</b>
             </form>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="./contact.js"></script>
     </body>
 </body>
 </html>

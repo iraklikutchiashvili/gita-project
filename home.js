@@ -30,7 +30,7 @@ $(function(){
                 const catOrigin = $('div#catInfoText > h3');
                 catBreedName.html("Breed Name: " + catDetailsObj.name);
                 catOrigin.html("Origin: " + catDetailsObj.origin);
-                $('.maxLife').html("Maximum Life Expectancy: " + catDetailsObj.min_life_expectancy);
+                $('.maxLife').html("Maximum Life Expectancy: " + catDetailsObj.max_life_expectancy);
                 $('.maxWeight').html("Maximum Weight: " + catDetailsObj.max_weight);
                 $('.length').html("Length: " + catDetailsObj.length);
 
